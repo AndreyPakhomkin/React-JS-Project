@@ -1,0 +1,44 @@
+.header{ /*Main Container*/
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: rgba(15, 21, 24, 0.103);
+}
+
+.loginButton, .historyButton{
+    height: 45px;
+    width: 150px;
+    color: aliceblue;
+    font-size: larger;
+    letter-spacing: 2px;
+    background: transparent;
+    border-radius: 7px;
+    background-color: rgba(15, 21, 24, 0.733);
+    
+}
+
+.loginButton{
+    margin-left: 85px;
+}
+
+.workTitle{
+    display: flex;
+    align-items: center;
+    background-image: url(../img/1.jpg);
+    border-radius: 10px;
+    color: aliceblue;
+    background-size: cover;
+    height: 80px;
+}
+
+.historyButton{
+    margin-right: 85px;
+
+}
+
+.loginButton:disabled, .historyButton:disabled{
+    opacity: 70%;
+    background-color: rgba(15, 21, 24, 0.829);
+}

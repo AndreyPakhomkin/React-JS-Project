@@ -1,0 +1,30 @@
+.checkboxWrapper [type="checkbox"]{
+    /*Откл дефолтный вид*/
+    -webkit-appearance: none; 
+    appearance: none;
+    
+    height: 45px;
+    width: 45px;
+    outline: none;
+    border: 2px solid rgba(15, 21, 24, 0.733);
+    border-radius: 7px;
+    color: aliceblue;
+    background-color: rgba(15, 21, 24, 0.733);
+    cursor: pointer;
+    margin: 5px;
+}
+
+input:checked{
+    background-color: rgba(15, 21, 24, 0.733);
+    position: relative;
+}
+
+input.checked::before{
+    content: "\2714";
+    font-size: 45px;
+    color: aliceblue;
+    position: absolute;
+    left: 3px;
+    top: -11px;
+
+}
